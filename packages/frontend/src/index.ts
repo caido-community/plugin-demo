@@ -2,6 +2,7 @@ import { Classic } from "@caido/primevue";
 import PrimeVue from "primevue/config";
 import { createApp } from "vue";
 
+import MySlot from "./components/MySlot.vue";
 import { SDKPlugin } from "./plugins/sdk";
 import "./styles/index.css";
 import type { FrontendSDK } from "./types";
@@ -43,4 +44,47 @@ export const init = (sdk: FrontendSDK) => {
 
   // Add a sidebar item
   sdk.sidebar.registerItem("My Plugin", "/my-plugin");
+
+  // Add a slot to the page
+  sdk.filters.addToSlot("create-header", {
+    type: "Custom",
+    definition: {
+      component: MySlot,
+    },
+  });
+
+  sdk.filters.addToSlot("update-header", {
+    type: "Custom",
+    definition: {
+      component: MySlot,
+    },
+  });
+
+  sdk.scopes.addToSlot("create-header", {
+    type: "Custom",
+    definition: {
+      component: MySlot,
+    },
+  });
+
+  sdk.scopes.addToSlot("update-header", {
+    type: "Custom",
+    definition: {
+      component: MySlot,
+    },
+  });
+
+  sdk.search.addToSlot("search-toolbar-primary", {
+    type: "Custom",
+    definition: {
+      component: MySlot,
+    },
+  });
+
+  sdk.httpHistory.addToSlot("toolbar-primary", {
+    type: "Custom",
+    definition: {
+      component: MySlot,
+    },
+  });
 };

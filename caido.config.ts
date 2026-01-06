@@ -7,11 +7,11 @@ import tailwindCaido from "@caido/tailwindcss";
 import path from "path";
 import prefixwrap from "postcss-prefixwrap";
 
-const id = "frontend-vue";
+const id = "plugin-demo";
 export default defineConfig({
   id,
-  name: "Frontend Vue",
-  description: "Plugin template with frontend using VueJS",
+  name: "Plugin Demo",
+  description: "Plugin demo with frontend using VueJS",
   version: "0.0.0",
   author: {
     name: "Caido Labs Inc.",
@@ -37,6 +37,7 @@ export default defineConfig({
           rollupOptions: {
             external: [
               '@caido/frontend-sdk', 
+              "@caido/sdk-components",
               "@codemirror/autocomplete", 
               "@codemirror/commands", 
               "@codemirror/language", 

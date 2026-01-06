@@ -3,6 +3,7 @@ import PrimeVue from "primevue/config";
 import { createApp } from "vue";
 
 import MySlot from "./components/MySlot.vue";
+import MyViewMode from "./components/MyViewMode.vue";
 import { SDKPlugin } from "./plugins/sdk";
 import "./styles/index.css";
 import type { FrontendSDK } from "./types";
@@ -85,6 +86,13 @@ export const init = (sdk: FrontendSDK) => {
     type: "Custom",
     definition: {
       component: MySlot,
+    },
+  });
+
+  sdk.httpHistory.addResponseViewMode({
+    label: "My View Mode",
+    view: {
+      component: MyViewMode,
     },
   });
 };

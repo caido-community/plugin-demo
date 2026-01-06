@@ -55,8 +55,8 @@ importers:
         specifier: 0.54.0
         version: 0.54.0
       '@caido/sdk-frontend':
-        specifier: 0.54.0
-        version: 0.54.0(@ai-sdk/provider@2.0.0)(@codemirror/state@6.5.2)(@codemirror/view@6.28.1)(vue@3.5.13(typescript@5.5.4))
+        specifier: 0.54.2-beta.6
+        version: 0.54.2-beta.6(@ai-sdk/provider@2.0.0)(@codemirror/state@6.5.2)(@codemirror/view@6.28.1)(vue@3.5.13(typescript@5.5.4))
       '@codemirror/view':
         specifier: 6.28.1
         version: 6.28.1
@@ -119,8 +119,8 @@ packages:
   '@caido/sdk-backend@0.54.0':
     resolution: {integrity: sha512-wAzI+xRE0r15NmJcHNokI4wsix0SR6mpFPxSfOvEduREmIMWnGDJ/dZxDcgv0DNISx+dDrwTaAD9H8XyjLnWtg==}
 
-  '@caido/sdk-frontend@0.54.0':
-    resolution: {integrity: sha512-WyOzKvifhUnv1k3vtkr1gHDkLlF0plhmfVZvjRd5Fw8FWcjZl7vFavhJVdv3bd6mtig3hjoH6GhwRWCOOMHJCg==}
+  '@caido/sdk-frontend@0.54.2-beta.6':
+    resolution: {integrity: sha512-vCtJQ6DtpM0cDjWrv5W+/wi47oxAXqzYtPlNxaVaDHcf/TyW1vUrhXlP1PsEIzPW6z790prCN64pT9GTBD11Ww==}
     peerDependencies:
       '@ai-sdk/provider': ^2.0.0
       '@codemirror/state': ^6.0.0
@@ -2491,7 +2491,7 @@ snapshots:
       '@caido/quickjs-types': 0.24.0
       '@caido/sdk-shared': 0.1.1
 
-  '@caido/sdk-frontend@0.54.0(@ai-sdk/provider@2.0.0)(@codemirror/state@6.5.2)(@codemirror/view@6.28.1)(vue@3.5.13(typescript@5.5.4))':
+  '@caido/sdk-frontend@0.54.2-beta.6(@ai-sdk/provider@2.0.0)(@codemirror/state@6.5.2)(@codemirror/view@6.28.1)(vue@3.5.13(typescript@5.5.4))':
     dependencies:
       '@ai-sdk/provider': 2.0.0
       '@codemirror/state': 6.5.2
